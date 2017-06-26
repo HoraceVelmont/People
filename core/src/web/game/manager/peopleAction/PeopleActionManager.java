@@ -2,17 +2,19 @@ package web.game.manager.peopleAction;
 
 import web.game.model.UserInfo;
 
+import javax.inject.Inject;
+
 /**
  * Created by Velmont on 2017-06-14.
  */
 public class PeopleActionManager {
-    private UserInfo userInfo;
+    @Inject
+    UserInfo userInfo;
 
-    public PeopleActionManager(UserInfo userInfo){
-        this.userInfo = userInfo;
+    public PeopleActionManager(){
     }
 
-    public void setUserInfo(UserInfo userInfo) {
-        this.userInfo = userInfo;
+    public void doPeopleActionRoutine(){
+        System.out.println(userInfo.getAge());
     }
 }
