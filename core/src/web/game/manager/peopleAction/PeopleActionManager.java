@@ -15,6 +15,6 @@ public class PeopleActionManager {
     }
 
     public void doPeopleActionRoutine(){
-        System.out.println(userInfo.getAge());
+        System.out.println(userInfo);
     }
 }

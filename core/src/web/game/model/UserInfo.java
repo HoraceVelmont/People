@@ -1,23 +1,20 @@
 package web.game.model;
 
+
+import lombok.Data;
+import lombok.Getter;
+
 import javax.inject.Singleton;
 
 /**
  * Created by Velmont on 2017-06-14.
  */
 @Singleton
+@Data
 public class UserInfo {
-    int age;
+    private @Getter int age;
 
     public UserInfo(){
         this.age = 3;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 }

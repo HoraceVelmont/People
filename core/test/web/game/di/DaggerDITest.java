@@ -2,7 +2,7 @@ package web.game.di;
 
 import org.junit.Test;
 import web.game.sample.coffee.CoffeeShop;
-import web.game.coffee.DaggerCoffeeShop;
+import web.game.sample.coffee.DaggerCoffeeShop;
 
 import static org.junit.Assert.assertNotNull;
 

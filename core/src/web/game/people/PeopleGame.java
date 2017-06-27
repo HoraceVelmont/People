@@ -12,6 +12,7 @@ public class PeopleGame extends Game {
 	
 	@Override
 	public void create () {
+
 		PeopleBuilder peopleBuilder = DaggerPeopleBuilder.create();
 		this.gameInstance = peopleBuilder.getGameInstance();
 		this.setScreen(new MainScreen(this));
